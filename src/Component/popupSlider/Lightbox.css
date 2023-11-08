@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(228, 253, 249);
+}
+
+
+.lightbox img {
+    height: 100%;
+    width:auto;
+}
+.item  {
+    height: 100%;
+    width:100%;
+}
+/* .lightbox-container{
+    background-color: rgba(0, 0, 0, 0.568);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+} */
+.lightbox{
+    width: 70%;
+    height: 500px;
+background-position: center;
+background-size: cover;
+position: relative;
+display: flex;
+justify-content: center;
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+i{
+    color: azure;
+}
+.icons-i{
+justify-content: space-between;
+display: flex;
+}

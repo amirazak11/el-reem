@@ -1,0 +1,8 @@
+<svg width="101" height="80" viewBox="0 0 101 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="64" cy="40" r="37" fill="#4ED4CE" fill-opacity="0.33"/>
+<path d="M18.3333 10L10 70" stroke="#202020" strokeWidth="4" strokeLinecap="round" stroke-linejoin="round"/>
+<path d="M61.6665 10L69.9405 69.9253" stroke="#202020" strokeWidth="4" strokeLinecap="round" stroke-linejoin="round"/>
+<path d="M40 10V20" stroke="#202020" strokeWidth="4" strokeLinecap="round" stroke-linejoin="round"/>
+<path d="M40 58.3333V70" stroke="#202020" strokeWidth="4" strokeLinecap="round" stroke-linejoin="round"/>
+<path d="M40 33.3333V45" stroke="#202020" strokeWidth="4" strokeLinecap="round" stroke-linejoin="round"/>
+</svg>

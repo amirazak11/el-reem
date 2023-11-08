@@ -1,0 +1,260 @@
+@media only screen and (max-width: 992px) {
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+        color: black;
+        width: 100%;
+        background-color: #f8f9fa;
+      }
+      .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+        background-color: #f8f9fa;
+        color: black !important;
+     
+            max-width: 100%;
+        }    
+
+
+.navbar-nav{
+    color: black;
+}
+.form-contactus form input, .form-contactus form textarea {
+
+    background-color: transparent;
+}
+.home-page-style a {
+    color: rgb(0, 0, 0) !important;
+
+}
+.Contactus {
+background-image: none !important;  }
+.card-outlet .card-body .img {
+    width: 6.352rem;
+    height: 4.61838rem;
+
+}
+
+.small-screen-logo {
+    display: block; 
+  }
+  .normal-logo {
+    display: none; 
+  }
+
+  [dir='rtl'] .slick-prev {
+    right: 10px;
+    left: auto;
+}
+[dir='rtl'] .slick-next {
+    right: auto;
+    left: -9px;
+}
+[dir='rtl'] .nav-menu.active{
+    left: 40% !important;
+    right: 0px !important;
+    z-index: 111111111 !important;
+}
+
+.nav-menu.active{
+    z-index: 111111111 !important;
+
+}
+[dir='rtl'] .nav-menu-items{
+    padding-right: 0px !important;
+}
+
+}
+@media only screen and (max-width: 760px) {
+
+
+    
+.baskin-img {
+    height: 97%;
+    padding: 12px;
+}
+.h2res {
+    height: 60px;
+}
+ .card-outlet .card-body {
+
+    height: 10rem;
+}
+.text-det{
+
+   font-size: 10px;
+}
+.baskin-img img{
+    height: auto;
+    margin: auto;
+}
+
+.baskin p {
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.0625rem;
+}
+.outleticon{
+    width: 100% !important;
+}
+    .navbar-expand-lg .container{
+        width: 100%;
+    }
+    .nav-item:hover .underline::after{
+        position: absolute;
+        content: '';
+        height: 0px;
+        bottom: 50px; 
+        margin: 0 auto;
+        right: 25%;
+      width: 40%;
+      background: #4ED4CE;
+      }
+    
+    .home-page-style a {
+        color: rgb(20, 20, 20) !important;
+    }
+    .section-footer{
+        text-align: start;
+    }
+
+body{
+    overflow-x: hidden;
+}
+    .first-slide h1 {
+
+        line-height: 50px;
+        font-size: 30px;
+    }
+    .slick-prev , .slick-next{
+        top: -10% !important;
+    }
+
+    .slick-prev{
+        left: 0;
+    }
+    .slick-next{
+        right: 25px;
+    }
+    .big-box {
+        height: 97%;
+        width: 100%;
+    }
+
+    h2 {
+
+        font-size: 1.5rem;
+
+    }
+    .layer-img-cotent h3 {
+        line-height: 35px;
+        font-size: 21px;
+    }
+
+    .layer-img-cotent p {
+        line-height: 38px;
+        font-size: 18px;
+    }
+
+    .facilities .card, .facilitiesabout .card {
+        padding: 0.5rem 2.1rem;
+    }
+    .res-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+.h2res{
+    display: flex;
+}
+
+.h2res h2{
+    font-size: 1.5rem;
+}
+.elreem{
+    margin-left: 5px;
+}
+.clients-say{
+    width: 100% !important;
+}
+.layer-client h2 {
+    font-size: 1.5rem;
+}
+.out-let-slider{
+    padding: 0.3rem 1.5rem;
+}
+
+.subscrib h3 {
+
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.375rem;
+    margin-bottom: 30px;
+}
+.subscrib {
+    padding: 20px
+};
+.footer {
+    border-top-right-radius: 60px;
+}
+.footer .logo-text p {
+    font-size: 0.8rem;
+    line-height: 1.875rem;
+}
+.footeroffooter{
+    font-size: 0.9rem;
+}
+.aboutus p {
+    font-size: 1rem;
+    line-height: 2rem;
+    width: 85%;
+}
+.g-info{
+    display: none;
+}
+.lightbox {
+    width: 90%;
+    height: 400px;
+}
+.icons {
+    width: 110% !important;
+  }
+  .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+
+    background-color: #f8f9fa;
+        color: black;
+      
+  }
+  .home-page-style {
+    top: -8px;
+  }
+  .home-page-style  a{
+    color: black;
+
+  }
+  .form-contactus{
+    width: 90% !important;
+    background-color: #f8f9fa;
+  }
+  .section-footer{
+    text-align: initial;
+  }
+
+
+  .groupinputs{
+    width: 100%;
+  padding: 0.5rem;
+  }
+  .btn-group button{
+    border-radius: 3.125rem;
+  background: #FFF;
+  width: 10rem;
+
+  }
+  button.navbar-toggler {
+    border: none !important;
+  }
+  .icons-i {
+    width: 100% !important;
+  }
+
+
+}
