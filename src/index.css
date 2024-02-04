@@ -1086,6 +1086,20 @@ border: none;
 
 
 @media only screen and (max-width: 991px) {
+
+
+  .gallery {
+    display: flex;
+    grid-gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery figure {
+    max-width: 45%;
+  }
+
+  
+
   .nav-item:hover .underline::after{
   background: inherit !important;
   }
@@ -1151,7 +1165,7 @@ margin-right: 25px;
 }
 @media only screen and (max-width: 1036px) {
   .container{
-    width: 90%;
+    width: 95%;
   }
 }
 
