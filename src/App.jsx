@@ -39,7 +39,7 @@ function App() {
       <ColorBoxProvider >
       <NavbarPage isHomePage={isHomePage} />
       <Routes>
-        {route.map((e) => <Route path={e.path} element={e.element} />)}
+        {route.map((e,index) => <Route path={e.path} key={index} element={e.element} />)}
       </Routes>
       <Footer />
 

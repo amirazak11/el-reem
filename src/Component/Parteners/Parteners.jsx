@@ -25,8 +25,8 @@ export default function Parteners() {
   {data?.map((partener) => (
 
     <div className="col-md-4 col-6">
-        <div className="img-parteners m-auto">
-          <img className='' src={partener?.image}/>
+        <div className="img-parteners ">
+          <img className='m-auto' src={partener?.image}/>
         </div>
     </div>))}
     </div></div>

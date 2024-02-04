@@ -42,16 +42,16 @@ export default function Footer() {
           </p>
           </div>
           <div>
-      <a href="" className="me-4 text-info " target="_blank">
+      <a href="contectus" className="me-4 text-info " target="_blank">
         <i className="fab fa-facebook-f"></i>
       </a>
-      <a href="" className="me-4 " target="_blank">
+      <a href="contectus" className="me-4 " target="_blank">
         <i className="fab fa-twitter"></i>
       </a>
-      <a href="" className="me-4 " target="_blank">
+      <a href="contectus" className="me-4 " target="_blank">
         <i className="fab fa-instagram"></i>
       </a>
-      <a href="" className="me-4 " target="_blank">
+      <a href="contectus" className="me-4 " target="_blank">
         <i className="fab fa-linkedin"></i>
       </a>
 
@@ -63,46 +63,46 @@ export default function Footer() {
           {t("Our Centre")}
           </h6>
           <p className='py-md-2 py-sm-0'>
-            <Link to="parents">
+            <Link to="parents" onClick={()=>window.scrollTo({ top: 0 })}>
            {t("Parents")}
            </Link>
           </p>
           <p className='py-md-2 py-sm-0'>
-          <Link to="outlet">
+          <Link to="outlet" onClick={()=>window.scrollTo({ top: 0 })}>
            {t("OutLets")}
            </Link>
           </p>
           <p className='py-md-2 py-sm-0'>
-          <Link to="about">
+          <Link to="about" onClick={()=>window.scrollTo({ top: 0 })}>
            {t("About Us")}
            </Link>
           </p>
           <p className='py-md-2 py-sm-0'>
-          <Link to="contectus">
+          <Link to="contectus" onClick={()=>window.scrollTo({ top: 0 })}>
             {t("Contact Us")}
             </Link>
           </p>
         </div>
 
         <div className="col-md-3 col-12 mx-md-auto mt-3 mt-md-0  mb-md-4 section-footer">
-        <h6 className="mb-md-2 mb-sm-0 py-md-4 py-sm-1">
+        <h6 className="mb-md-2 mb-sm-0 py-md-4 py-sm-2">
 
         {t("Support")}
 
                   </h6>
           <p className='py-md-2 py-sm-0'>
-          <Link to='terms'>
+          <Link to='terms' onClick={()=>window.scrollTo({ top: 0 })}>
             {t("Terms and Conditions")}
             </Link>
           </p>
           <p className='py-md-2 py-sm-0'>
-          <Link to='privacy'>{t("Privacy Policy")}</Link>
+          <Link to='privacy' onClick={()=>window.scrollTo({ top: 0 })}>{t("Privacy Policy")}</Link>
           </p>
 
         </div>
 
         <div className="col-md-3 col-12  mx-md-auto mb-md-0 mb-4 section-footer">
-        <h6 className="mb-md-2 mb-0 py-md-4 py-1">
+        <h6 className="mb-md-2 mb-0 py-md-4 py-sm-2">
        {t("Contact Us")}</h6>
         
             <p className='py-md-1 py-sm-0'>
@@ -114,7 +114,7 @@ export default function Footer() {
         {setting?.email}
       </a>
           </p>
-          <p className='py-md-1 py-sm-0'>
+          <p className='py-md-1  py-sm-0'>
           <a href={`tel:${setting?.phone}`}>
       <i className={`fas fa-phone ${isArabic ?' ms-3':'me-3'}`}></i>
       {setting?.phone}
@@ -129,7 +129,7 @@ export default function Footer() {
     </div>
 
     <div>
-    <span>{t("Powered by")}</span><span><Link className='emcan' to="https://emcan-group.com/en"> {t("Emcan Solutions")}</Link></span>
+    <span>{t("Powered by")}</span><span><Link className='emcan' target="_blank" to="https://emcan-group.com/en"> {t("Emcan Solutions")}</Link></span>
     </div>
   
   </section>

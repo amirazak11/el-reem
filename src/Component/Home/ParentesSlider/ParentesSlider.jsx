@@ -3,6 +3,7 @@ import Slider from "react-slick";
 export default function ParentesSlider({data}) {
   var settings = {
     dots: true,
+    arrows:false,
     infinite: false,
     speed: 500,
     slidesToShow: 4,

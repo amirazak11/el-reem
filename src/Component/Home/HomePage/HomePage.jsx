@@ -1,24 +1,81 @@
 import React, { useEffect, useState } from 'react';
 import HomeheaderDiv from '../HomeheaderDiv/HomeheaderDiv';
 import ClientSays from '../../clientssays/clientSays';
-import { useTranslation } from 'react-i18next';
-import Lightbox from '../../popupSlider/popupSlider';
 import OutLet from '../outLet/outLet';
 import PageTitle from '../../pageTitle/pageTitles';
-import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { useContext } from "react";
+import { ColorBox } from "../../../Context/ColorboxContext";
+import { Link, useNavigate } from 'react-router-dom';
 import ParentesSlider from '../ParentesSlider/ParentesSlider';
 import baseUrl from '../../../BaseUrl/BaseUrl';
 import useFetch from '../../../hooks/useFetch';
+import SliderImg from './sliderImg/sliderImg';
 export default function HomePage({ customDesign }) {
   const { t, i18n } = useTranslation();
+  const isArabic = i18n.language === 'ar';
   const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
   const { data, error } = useFetch(`${baseUrl}/${currentLanguage}/home`);
+  const {getAllData,dataUser,setTitleValue} = useContext(ColorBox)
+  let Navigate =useNavigate()
+console.log(dataUser)
+  const handleTitleChange = (e) => {
+    setTitleValue(e.target.value);
+  };
+  function register(e) {
+    e.preventDefault();
+    getAllData();
+    if(dataUser){
+      Navigate("../../outlet")
+    }
+  }
   useEffect(() => {
     setCurrentLanguage(i18n.language);
   }, [i18n.language,currentLanguage]);
   return (
     <>
-      <HomeheaderDiv data={data.sliders} />
+    <div className="header">
+
+          <SliderImg data={data.sliders} />
+          <div className="layer">
+          <div className="container ">
+              <div className="row">
+          <div className="d-flex justify-content-center first-slide">
+            <h1>{t("Al Reem Centre")}</h1>
+            <h5>{t("Bahrain's most prominent shopping centre")}</h5>
+            <form onSubmit={ register}>
+
+            <div className={`d-flex groupinputs my-2 my-md-5 ${isArabic ? 'arabic-style-dir' : ''}`}>
+            <div className="btn-group ">
+  {/* <button className="btn  btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> */}
+  <button className="btn  btn-lg " type="submit" >
+
+    {t("Search")}
+  </button>
+  {/* <ul className="dropdown-menu">
+
+  </ul> */}
+</div>
+
+              <div className="w-50">
+              <input  className="form-control " onChange={handleTitleChange} placeholder={t("Outlet Name" )}type="text"/>
+              </div>
+<p className="d-flex align-items-center mb-0 mx-2">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <circle cx="11" cy="11" r="6" stroke="white" strokeWidth="2"/>
+  <path d="M20 20L17 17" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+</svg>
+</p>
+            </div>
+            </form>
+
+            </div>
+        
+          </div>
+          </div>
+          </div>
+</div>
+      {/* <HomeheaderDiv data={data.sliders} /> */}
 
 
       <div className="container my-5 py-3 part-slid">
@@ -29,17 +86,9 @@ export default function HomePage({ customDesign }) {
       <div className="container my-5 py-3">
         <div className="row gx-0 gx-md-5">
           <div className="col-md-5 col-sm-12">
-            <div className="big-box">
-              <div className="box1">
-
-              </div>
-              <div className="box2">
-
-              </div>
               <div className="img-box">
                 <img src={data?.about?.image} />
               </div>
-            </div>
           </div>
           <div className="col-md-7 col-sm-12">
             <div className="layer-img-cotent">

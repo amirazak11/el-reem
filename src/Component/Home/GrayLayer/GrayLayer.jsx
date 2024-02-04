@@ -5,12 +5,11 @@ export default function GrayLayer({ divData }) {
 
 
   return (
-    <div className="header "  >
+ 
 
           
 <SimpleSlider divData={divData}/>
 
-        </div>
 
   );
 }
